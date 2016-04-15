@@ -8,7 +8,7 @@
 
     <meta name="description"
           content="Containerized End-2-End-Testing, more information under https://github.com/ConSol/sakuli ">
-    <meta name="author" content="Tobias Schneck">
+    <meta name="author" content="Tobias Schneck, Tim Keiner">
 
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
@@ -58,7 +58,7 @@
 
             <!-- Referent: Tobias Schneck, ConSol Software GmbH-->
             <p style="padding-top: 4em; text-align: right">
-                <small>Referent: <a href="mailto:tim.keiner@consol.de">Tim Keiner</a> & <a
+                <small><a href="mailto:tim.keiner@consol.de">Tim Keiner</a> & <a
                         href="mailto:tobias.schneck@consol.de">Tobias Schneck</a>, <a
                         href="http://www.consol.de">ConSol* Software GmbH</a>
                 </small>
@@ -74,11 +74,20 @@
 
         <section>
             <h2>Way to sucess</h2>
-            <ul>
-                <li>Be agile</li>
-                <li>Be social</li>
-                <li>Be standard</li>
-            </ul>
+            <table>
+                <tr>
+                    <td><img class="image" src="pics/change-ahead.png"
+                             style="height:12em; border: 0; box-shadow: none">
+                    </td>
+                    <td width="50%" style="vertical-align: middle;" class="custom_hook">
+                        <ul>
+                            <li><b>Be agile</b></li>
+                            <li><b>Be social</b></li>
+                            <li><b>Be creative</b></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </section>
         <!-- <section>
             <h2>Agenda</h2>
@@ -115,7 +124,7 @@
 
         <section>
             <h2>Best Practice</h2>
-            <ul class="blue_hook">
+            <ul class="custom_hook">
                 <li>Code/Story Reviews</li>
                 <li>Feature Flags & Feature Branches</li>
                 <li>Continuous Delivery</li>
@@ -128,20 +137,20 @@
             <h2 style="margin: 0">GitHub - Be Social!</h2>
             <table>
                 <tr>
-                    <td colspan="3" style="text-align: center">
+                    <td colspan="3" style="text-align: center; padding-bottom: 0.5em">
                         <img width="80%" src="pics/sakuli_github_site.png" style="box-shadow: none">
                     </td>
                 </tr>
                 <tr>
                     <td width="60%" style="vertical-align: top; padding-right: 1em">
-                        <ul class="blue_hook">
+                        <ul class="custom_hook">
                             <!-- TODO Like Thumbs -->
                             <li>Public Source Repository</li>
                             <li>Follow People / Organizations / Projects</li>
                         </ul>
                     </td>
                     <td style="vertical-align: top">
-                        <ul class="blue_hook">
+                        <ul class="custom_hook">
                             <!-- TODO Like Thumbs -->
                             <li>Pull Requests</li>
                             <li>Issues</li>
@@ -161,18 +170,18 @@
             <img width="95%" src="pics/ci_pipeline.png" style="box-shadow: none">
         </section>
         <section>
-            <h2>Testpyramide</h2>
+            <h2>Test Pyramid</h2>
             <table>
                 <tr>
                     <td><img class="image" src="pics/test_pyramide.png"
                              style="height:12em; border: 0; box-shadow: none">
                     </td>
-                    <td width="37%" style="vertical-align: middle;" class="blue_hook">
+                    <td width="37%" style="vertical-align: middle;" class="custom_hook">
                         <ul>
                             <li><b>Robust</b></li>
-                            <li><b>Unabhängig</b></li>
-                            <li><b>Isoliert</b></li>
-                            <li><b>Schnell</b></li>
+                            <li><b>Independent</b></li>
+                            <li><b>Isolated</b></li>
+                            <li><b>Fast</b></li>
                         </ul>
                     </td>
                 </tr>
@@ -212,46 +221,46 @@
         <!--</section>-->
 
         <section>
-            <h2 style="margin: 0">Virtuelle Maschinen vs. Container
-                <br/><span style="font-size: x-large;">(am Beispiel Docker)</span></h2>
+            <h2 style="margin: 0">Virtual Machine vs. Container
+                <br/><span style="font-size: x-large;">(exemplified by Docker)</span></h2>
             <img width="95%" src="pics/vm_vs_docker.png">
         </section>
 
         <section>
-            <h2 style="padding-bottom: 0.2em">Vorteile der Container-Technologie</h2>
+            <h2 style="padding-bottom: 0.2em">Advantages of Container Technology</h2>
             <img class="image" src="pics/container-technology.jpg"
                  style="height: 4em; border: 0; box-shadow: none; margin: 0em; padding-bottom: 0.2em">
-            <ul class=" blue_hook">
-                <li><b class="coloured">Isolation</b> von Umgebungen</li>
-                <li><b class="coloured">Repository</b> für Versionierung und Verteilung</li>
-                <li><b class="coloured">Nachvollziehbarer Aufbau</b> der Umgebung</li>
+            <ul class=" custom_hook">
+                <li><b class="coloured">Isolation</b> of environments</li>
+                <li><b class="coloured">Repository</b> for versioning and distribution</li>
+                <li><b class="coloured">Reproducible</b> application environment</li>
                 <ul style="list-style: disc">
                     <li>Dockerfile, docker-compose.yml</li>
                 </ul>
-                <li>Start von Containern <b class="coloured">on-the-fly</b></li>
-                <li>Einfache <b class="coloured">Parallelisierung</b></li>
+                <li>Starting containers <b class="coloured">on-the-fly</b></li>
+                <li>Optimized for <b class="coloured">parallelization</b></li>
                 <ul style="list-style: disc">
-                    <li>Wenig Speicher-Overhead</li>
-                    <li>Teilen sich den selben Linux-Kernel</li>
+                    <li>Less memory overhead</li>
+                    <li>Shared Linux kernel</li>
                 </ul>
             </ul>
         </section>
 
         <section>
-            <h2>Sakuli End-2-End-Testing Container</h2>
+            <h2>Sakuli End-2-End Testing Container</h2>
 
             <div style="margin-top: 2em">
                 <img width="100%" style="box-shadow: none" src="pics/container_sakuli.png">
             </div>
         </section>
         <section>
-            <h2 style="padding-bottom: 0">CI Demo Aufbau</h2>
+            <h2 style="padding-bottom: 0">CI Demo Setup</h2>
             <a href="https://github.com/toschneck/sakuli-example-bakery-testing" target="_blank">
                 <img width="90%" style=" border: none" src="pics/ci_umgebung.png"/>
             </a>
         </section>
         <section>
-            <h2 style="padding-bottom: 0">CI Demo Aufbau</h2>
+            <h2 style="padding-bottom: 0">CI Demo Setup</h2>
             <a href="https://github.com/toschneck/sakuli-example-bakery-testing" target="_blank">
                 <img width="90%" src="pics/ci_umgebung_2.png"/>
             </a>
@@ -309,6 +318,12 @@
                         <img src="pics/github.png" style="box-shadow: none; height: 7em; width: 100%">
                     </td>
                     <td style="vertical-align: middle">
+                        <a href="https://labs.consol.de target=" _blank">
+                        <b>
+                            https://labs.consol.de
+                        </b>
+                        </a>
+                        <div style="padding-top: 0.5em"></div>
                         <a href="https://github.com/ConSol/sakuli" target="_blank">
                             <b>
                                 https://github.com/ConSol/sakuli
@@ -326,28 +341,17 @@
                 </tr>
                 <tr>
                     <td>
-                        <div style="padding-top: 1.5em"></div>
+                        <div style="padding-top: 0.5em"></div>
                     </td>
                 </tr>
                 <tr>
-                    <td style="text-align: center">
+                    <td colspan="2" style="text-align: center">
                         <a href="https://twitter.com/sakuli_e2e">
                             <img src="pics/twitter_handle.png" style="box-shadow: none; height: 1em">
                         </a>
-                    </td>
-                    <td><a href="https://twitter.com/sakuli_e2e">
-                        <b>https://twitter.com/sakuli_e2e</b>
-                    </a>
-                    </td>
-                <tr>
-                    <td style="text-align: center">
                         <a href="https://twitter.com/consol_de">
                             <img src="pics/twitter_consol_de.png" style="box-shadow: none; height: 0.95em">
                         </a>
-                    </td>
-                    <td><a href="https://twitter.com/consol_de">
-                        <b>https://twitter.com/consol_de</b>
-                    </a>
                     </td>
                 </tr>
             </table>
@@ -358,61 +362,70 @@
         <!--</section>-->
 
         <section>
-            <h1 class="coloured" style="text-transform: inherit">Vielen Dank!</h1>
+            <h1 class="coloured" style="text-transform: inherit">Thank you!</h1>
 
-            <table style="margin-top: 3em;font-size: x-large">
+            <table style="font-size: x-large">
                 <tr>
-                    <td>
-                        <img style="box-shadow: none;height: 10.6em; padding-top: 0.2em;"
+                    <td width="50%" style="padding-right: 5px;  padding-top: 0.2em;">
+                        <img style="height: 8em;margin-right: 15px; float: left"
                              src="pics/profile_pic_tschneck_sw.jpg">
+                        <div style="margin-top: 2em; line-height: 1.5em">
+                            <b>Tobias Schneck</b>
+                            <a style=" padding-right: 1em;
+                    " href="mailto:tobias.schneck@consol.de">tobias.schneck@consol.de</a>
+                            <a href="https://twitter.com/toschneck">
+                                <img src="pics/twitter_toschneck.png"
+                                     style="vertical-align: top; box-shadow: none; height: 1.1em; margin-top: 0.25em">
+                            </a>
+                        </div>
                     </td>
-                    <td style="vertical-align: top; width: 60%">
+                    <td style="padding-right: 10px;  padding-top: 0.2em;">
+                        <img style="height: 8em;margin-right: 15px; float: left"
+                             src="pics/profile_pic_timkeiner_sw.jpg">
+                        <div style="margin-top: 2em; line-height: 1.5em">
+                            <b>Tim Keiner</b>
+                            <a style=" padding-right: 1em" href="mailto:tim.keiner@consol.de">tim.keiner@consol.de</a>
+                            <a href="https://twitter.com/tnobody">
+                                <img src="pics/twitter_toschneck.png"
+                                     style="vertical-align: top; box-shadow: none; height: 1.1em; margin-top: 0.25em">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center" colspan="2">
                         <table>
                             <tr>
-                                <td><b>Tobias Schneck</b></td>
-                            </tr>
-                            <tr>
                                 <td>
-                                    <a style=" padding-right: 1em;
-                    " href="mailto:tobias.schneck@consol.de">tobias.schneck@consol.de</a>
+                                    <img src="pics/consol_sun.png" style="padding-top: 3em; padding-right:20px; height: 4em; box-shadow: none;float: none">
                                 </td>
-                                <td>
-                                    <a href="https://twitter.com/toschneck">
-                                        <img src="pics/twitter_toschneck.png"
-                                             style="vertical-align: top; box-shadow: none; height: 1.1em">
-                                    </a>
+                                <td style="padding-top: 0">
+                                    <table style="">
+                                        <tr>
+                                            <td><b>ConSol Software GmbH</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Franziskanerstraße 38</td>
+                                        </tr>
+                                        <tr>
+                                            <td>D-81669 München</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tel: +49-89-45841-100</td>
+                                            <td><a href="mailto:info@consol.de">info@consol.de</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fax: +49-89-45841-111</td>
+                                            <td><a href="http://www.consol.de">www.consol.de</a></td>
+                                        </tr>
+                                    </table>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div style="height: 1.5em"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><b>ConSol Software GmbH</b></td>
-                            </tr>
-                            <tr>
-                                <td>Franziskanerstraße 38</td>
-                            </tr>
-                            <tr>
-                                <td>D-81669 München</td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div style="height: 0.5em"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Tel: +49-89-45841-100</td>
-                                <td><a href="mailto:info@consol.de">info@consol.de</a></td>
-                            </tr>
-                            <tr>
-                                <td>Fax: +49-89-45841-111</td>
-                                <td><a href="http://www.consol.de">www.consol.de</a></td>
                             </tr>
                         </table>
                     </td>
                 </tr>
+
             </table>
         </section>
 

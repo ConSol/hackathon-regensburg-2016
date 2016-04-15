@@ -25,6 +25,8 @@ $headingTextTransform: none;
 $headingFontWeight: 600;
 $linkColor: #2a76dd;
 $linkColorLightBlue: #327daf;
+//$linkColor: #55d400;
+//$linkColorLightBlue: #55d400;
 $linkColorHover: lighten($linkColor, 15%);
 $selectionBackgroundColor: lighten($linkColor, 25%);
 
@@ -86,8 +88,9 @@ section.has-dark-background {
   padding: 0;
 }
 
-.reveal .blue_hook {
-  list-style-image: url('pics/blue_hook_list.png');
+.reveal .custom_hook {
+  //list-style-image: url('pics/blue_hook_list.png');
+  list-style-image: url('pics/green_hook_list.png');
 }
 
 .reveal section img {

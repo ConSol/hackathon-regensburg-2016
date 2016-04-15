@@ -301,8 +301,8 @@ body {
   font-size: xx-large;
   padding: 0; }
 
-.reveal .blue_hook {
-  list-style-image: url('pics/blue_hook_list.png'); }
+.reveal .custom_hook {
+  list-style-image: url('pics/green_hook_list.png'); }
 
 .reveal section img {
   margin: 0;
